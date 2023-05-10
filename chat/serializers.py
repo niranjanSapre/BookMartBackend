@@ -1,0 +1,9 @@
+from rest_framework.serializers import ModelSerializer
+from .models import Chat
+
+class ChatSerializer(ModelSerializer):
+
+    class Meta:
+        model = Chat
+        depth = 1
+        fields = '__all__' 
